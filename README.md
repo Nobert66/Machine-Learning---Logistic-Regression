@@ -1,0 +1,21 @@
+# Machine-Learning---Logistic-Regression
+A machine learning project that predicts heart disease using Logistic Regression in R. The workflow includes data preprocessing, feature selection with Boruta, class balancing, model training, cross-validation, and evaluation using a confusion matrix, ROC curve, and AUC.
+
+# Project Overview
+
+Heart disease remains one of the leading causes of illness and mortality worldwide, making early detection essential for improving patient outcomes and supporting clinical decision making. This project develops a binary classification model using Logistic Regression to predict whether a patient is likely to have heart disease based on clinical and demographic characteristics. Rather than serving as a replacement for medical diagnosis, the model is designed as a decision support tool that identifies patterns within patient data and estimates the probability of heart disease.
+
+The project follows a complete end to end machine learning workflow implemented in R. It begins with data loading and exploratory inspection to understand the structure and quality of the dataset. Data preprocessing includes checking for missing values, identifying and removing duplicate observations, converting categorical variables into factors, renaming variables to improve readability, and transforming the target variable into meaningful class labels.
+
+Since machine learning models are sensitive to class distribution, the dataset is evaluated for class imbalance. Upsampling is applied to create a balanced dataset, reducing the likelihood of bias toward the majority class and improving the model's ability to correctly classify both positive and negative cases.
+
+Feature selection is performed using the Boruta algorithm, an all relevant feature selection method based on Random Forest. Boruta evaluates the contribution of each predictor by comparing its importance with randomized shadow features. This process identifies variables that significantly contribute to heart disease prediction while removing those with little predictive value. In this analysis, fasting blood sugar and resting electrocardiographic results were identified as having limited importance and excluded from the final model.
+
+The prepared dataset is then divided into training and testing subsets, with 80 percent of the observations used for model training and the remaining 20 percent reserved for independent evaluation. Logistic Regression is trained using the caret package with repeated 10 fold cross validation. This resampling strategy improves model reliability by evaluating performance across multiple training and validation splits while reducing the risk of overfitting. Continuous predictors are centered and scaled during preprocessing to ensure consistent model estimation.
+
+Model performance is assessed using multiple evaluation metrics rather than relying solely on accuracy. A confusion matrix is generated to measure accuracy, sensitivity, specificity, positive predictive value, negative predictive value, balanced accuracy, and Cohen's Kappa. These metrics provide a comprehensive assessment of how well the model distinguishes patients with heart disease from those without the condition.
+
+The Receiver Operating Characteristic, ROC, curve is constructed to evaluate the model across different classification thresholds. The Area Under the ROC Curve, AUC, summarizes the model's discriminative ability. An AUC close to 1 indicates excellent performance, meaning the model effectively separates patients with heart disease from healthy individuals.
+
+Beyond model development, this project demonstrates essential machine learning practices including data cleaning, feature engineering, class balancing, feature selection, model validation, statistical evaluation, and result interpretation. The workflow provides a practical example of applying supervised machine learning techniques to healthcare data while emphasizing transparency, reproducibility, and interpretability. Although Logistic Regression is one of the simplest classification algorithms, its strong predictive performance and ease of interpretation make it well suited for clinical risk prediction problems where understanding the relationship between predictors and outcomes is as important as achieving high predictive accuracy.
+
