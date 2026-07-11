@@ -1,4 +1,4 @@
-<img width="1254" height="1254" alt="ChatGPT Image Jul 12, 2026, 12_53_57 AM" src="https://github.com/user-attachments/assets/95d64e96-7bd1-46f1-b070-4620a29077f9" /># 
+ 
 Machine-Learning---Logistic-Regression
 A machine learning project that predicts heart disease using Logistic Regression in R. The workflow includes data preprocessing, feature selection with Boruta, class balancing, model training, cross-validation, and evaluation using a confusion matrix, ROC curve, and AUC.
 ![Uploading ChatGPT Image Jul 12, 2026, 12_53_57 AM.png…]()
