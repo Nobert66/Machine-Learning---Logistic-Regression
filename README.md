@@ -3,6 +3,7 @@ Machine-Learning---Logistic-Regression
 A machine learning project that predicts heart disease using Logistic Regression in R. The workflow includes data preprocessing, feature selection with Boruta, class balancing, model training, cross-validation, and evaluation using a confusion matrix, ROC curve, and AUC.
 ![Uploading ChatGPT Image Jul 12, 2026, 12_53_57 AM.png…]()
 
+
 # Project Overview
 
 Heart disease remains one of the leading causes of illness and mortality worldwide, making early detection essential for improving patient outcomes and supporting clinical decision making. This project develops a binary classification model using Logistic Regression to predict whether a patient is likely to have heart disease based on clinical and demographic characteristics. Rather than serving as a replacement for medical diagnosis, the model is designed as a decision support tool that identifies patterns within patient data and estimates the probability of heart disease.
